@@ -1,7 +1,7 @@
 import Header from "./Componentes/Header"
 import MainDiv from "./Componentes/MainDiv"
 
-export default function ADFpage() {
+export default function ADFpage() { {/* ADF: A Dev's Feed */}
     return (
         <>
             <Header />
@@ -10,5 +10,3 @@ export default function ADFpage() {
         </>
     )
 }
-
-// ADF: A Dev's Feed
