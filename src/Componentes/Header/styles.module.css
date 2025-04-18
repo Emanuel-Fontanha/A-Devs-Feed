@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #0E0E1B;
+}
+.title {
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Inter";
+    color: #036FDB;
+    text-shadow: 2px 2px 8px #0464c4;
+}

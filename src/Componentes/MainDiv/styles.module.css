@@ -1,0 +1,20 @@
+* {
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+.mainDiv {
+	justify-content: center;
+	flex-direction: row;
+	min-height: fit-content;
+	background-color: #00274f;
+	gap: 120px;
+	padding-top: 40px;
+}
+.subDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+    position: relative;
+    left: 550px;
+}

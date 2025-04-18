@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Inter", Arial, Helvetica, sans-serif;
+}
+.likeButton {
+    width: 5.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    color: #DDDDDD;
+    background-color: #0E0E1B;
+    padding: 10px 2px;
+    transition: 0.2s ease;
+
+    svg {
+        fill: white;
+        transition: fill 0.3s ease;
+    }
+
+    &:hover {
+        color: #007DFA;
+        transition: 0.2s ease;
+        fill: #007DFA;
+        cursor: pointer;
+    }
+
+}
