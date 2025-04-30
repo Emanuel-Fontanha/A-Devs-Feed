@@ -1,3 +1,7 @@
+// This is the RICARDO-CARD COMPONENT that will be used in the main page.
+// Styling and function names are used to partially describe each part and/or element of the component.
+
+
 import styles from "./styles.module.css"
 import Ricardo from "../../assets/pup02.jpg"
 import Comments from "../Comments"
@@ -17,12 +21,12 @@ export default function RicardoCard() {
         {
             name: "Felyppe Nunes",
             photo: "src/assets/pup03.jpg",
-            textComment: "Est aspernatur quis eos natus dicta et internos",
+            textComment: "Ex laboriosam dolorem non tempore earum et voluptatem suscipit",
         },
         {
             name: "Mellany Carter",
             photo: "src/assets/pup04.jpg",
-            textComment: "Est aspernatur quis eos natus dicta et internos",
+            textComment: "Non quos omnis ut autem labore nam vero consequatur est porro similique ad adipisci quisquam!",
         },
         {
             name: "Jessy Logan",
@@ -31,7 +35,7 @@ export default function RicardoCard() {
         }
     ])
     
-    function CreateComment (text: string) {
+    function createComment (text: string) {
         const aux: ICommentary = {
             name: "Usuário",
             photo: "src/assets/commentAny.jpg",
@@ -44,14 +48,17 @@ export default function RicardoCard() {
         }
     }
 
-    function textAreaHeightBooster (e: FormEvent<HTMLTextAreaElement>) {
+    function textAreaHeightBooster (e: FormEvent<HTMLTextAreaElement>) {  
+        {/* Does so the input's height is increased according to the user's text height */}
         const aux = e.currentTarget
         aux.style.height = "auto"
         aux.style.height = aux.scrollHeight + "px"
     }
 
     function commentEraser (index: number) {
-        setListComments(listComments.filter((_, item) => item !== index))
+        setListComments(
+            listComments.filter((_, item) => item !== index) 
+        )
     }
 
     return (
@@ -85,7 +92,7 @@ export default function RicardoCard() {
                 />
                 <button
                     className={styles.commentButton}
-                    onClick={() => CreateComment(commentText)}>
+                    onClick={() => createComment(commentText)}>
                     Comentar
                 </button>
             </div>

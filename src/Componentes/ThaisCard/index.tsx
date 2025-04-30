@@ -1,3 +1,7 @@
+// This is the THAIS-CARD COMPONENT that will be used in the main page.
+// Styling and function names are used to partially describe each part and/or element of the component.
+
+
 import styles from "./styles.module.css"
 import Thais from "../../assets/pup01.jpg"
 import Comments from "../Comments"
@@ -18,13 +22,16 @@ export default function ThaisCard() {
     }
 
     function textAreaHeightBooster (e: FormEvent<HTMLTextAreaElement>) {
+        {/* Does so the input's height is increased according to the user's text height */}
         const aux = e.currentTarget
         aux.style.height = "auto"
         aux.style.height = aux.scrollHeight + "px"
     }
 
     function commentEraser (index: number) {
-        setListComments(listComments.filter((_, item) => item !== index))
+        setListComments(
+            listComments.filter((_, item) => item !== index)
+        )
     }
 
     return (

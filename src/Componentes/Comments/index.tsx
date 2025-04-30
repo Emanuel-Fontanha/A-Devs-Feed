@@ -1,3 +1,7 @@
+// This is the COMMENTARY COMPONENT that will be used in the RICARDO-CARD and THAIS-CARD components to show comments.
+// Styling names are used to partially describe each part and/or element of the component.
+
+
 import styles from "./styles.module.css"
 import deleteButton from "../../assets/delete-button.png"
 import LikeButton from "../LikeButton"
@@ -15,8 +19,8 @@ export default function Comments ({name, photo, commentText, deleteComment}: ICo
     return (
         <div className={styles.container}>
             <img className={styles.profilePic} src={photo} alt="Profile Picture" />
-
-            <div className={styles.subContainer}>
+            
+            <div className={styles.subContainer}> 
                 <div className={styles.comment}>
                     <div className={styles.infoDiv}>
                         <div className={styles.info}>

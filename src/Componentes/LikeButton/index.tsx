@@ -1,3 +1,8 @@
+// This is the LIKE-BUTTON COMPONENT that will be used in the COMMENTS component to show the like button.
+// Since the like factor is a boolean, you can only have either 1 or 0 likes.
+// Styling and function names are used to partially describe each part and/or element of the component.
+
+
 import style from "./styles.module.css"
 import likeButton from "../../assets/like-button.png"
 import { useState } from "react"

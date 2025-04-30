@@ -7,7 +7,7 @@
 	justify-content: center;
 	flex-direction: row;
 	min-height: fit-content;
-	background-color: #00274f;
+    background: linear-gradient(45deg, #114e1b, #036FDB);
 	gap: 120px;
 	padding-top: 40px;
 }

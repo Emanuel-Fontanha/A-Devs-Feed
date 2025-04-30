@@ -39,12 +39,12 @@
         transform: scale(1.05);
     }
 }
-.title1 {
+.name {
 	font-weight: 400;
 	font-size: 1.5rem;
 	color: #ffffff;
 }
-.title2 {
+.title1 {
 	font-weight: 400;
 	font-size: 1rem;
 	color: #999999;
