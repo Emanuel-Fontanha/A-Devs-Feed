@@ -20,4 +20,4 @@ Open your console, type "npm run dev" and it should open a browser tab showing t
 - LinkedIn: www.linkedin.com/in/emanuel-fontanha
 - E-mail: emanuelmfontanha@gmail.com
 
-## Status - On Development
+## Status - Finished
