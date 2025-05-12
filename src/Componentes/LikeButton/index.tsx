@@ -12,7 +12,12 @@ export default function LikeButton () {
     const [counter, setCounter] = useState(0)
     const [like, setLike] = useState(false)
 
-    function handleClick() {
+    function handleClick() { 
+        
+        // Handle's click event by checking the current state of the like variable
+        // If true, set's the counter to 0, removing your like
+        // If false, set's the counter to 1, adding your like
+        
         if (like) {
             setCounter(counter - 1)
         } else {

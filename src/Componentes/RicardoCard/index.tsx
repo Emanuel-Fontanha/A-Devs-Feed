@@ -18,6 +18,9 @@ export default function RicardoCard() {
     const textAreaRef = useRef<HTMLTextAreaElement>(null)
     const [commentText, setCommentText] = useState("")
     const [listComments, setListComments] = useState<ICommentary[]>([
+
+        // the listComments variable starts with an array of 3 default objects (comments)
+
         {
             name: "Felyppe Nunes",
             photo: "src/assets/pup03.jpg",
@@ -36,26 +39,36 @@ export default function RicardoCard() {
     ])
     
     function createComment (text: string) {
+
+        // Creates a new comment by:
+        // 1. Attributing the parameters to an object
+        // 2. Adding it to the beggining of the listComments array
+
         const aux: ICommentary = {
-            name: "Usuário",
+            name: "Dr. Bananas",
             photo: "src/assets/commentAny.jpg",
             textComment: text,
         }
-        setListComments([aux, ...listComments])
+        setListComments([aux, ...listComments]) // Spread operator used to put the object at the start of the listComments array
         setCommentText("")
-        if (textAreaRef.current) {
-            textAreaRef.current.style.height = "auto"
+        if (textAreaRef.current) { // If the textAreaRef is not null, resets the height of the text area to default
+            textAreaRef.current.style.height = "auto" 
         }
     }
 
-    function textAreaHeightBooster (e: FormEvent<HTMLTextAreaElement>) {  
-        {/* Does so the input's height is increased according to the user's text height */}
+    function textAreaHeightBooster (e: FormEvent<HTMLTextAreaElement>) {
+
+        // Does so the input's height is increased according to the user's text height
         const aux = e.currentTarget
         aux.style.height = "auto"
-        aux.style.height = aux.scrollHeight + "px"
+        aux.style.height = aux.scrollHeight + "px" // Turns the current height of the text area into the new height
+        // The "+ px" converts the measuring unit in the scrollHeight to pixels
     }
 
     function commentEraser (index: number) {
+
+        // Erases a comment by filtering the listComments array and removing the selected comment
+        // The index parameter is the index of the comment to be removed
         setListComments(
             listComments.filter((_, item) => item !== index) 
         )
@@ -100,6 +113,8 @@ export default function RicardoCard() {
             <div className={styles.divFour}>
                 {
                     listComments.map((aux, index) => (
+
+                        // Dynamic rendering of each object (a comment) in the listComments array
                         <Comments
                             key={index}
                             name= {aux.name} 
