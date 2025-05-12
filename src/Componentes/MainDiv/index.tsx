@@ -10,8 +10,10 @@ import styles from "./styles.module.css"
 export default function MainDiv() {
     return (
         <div className={styles.mainDiv}>
-            <SelfCard />
-            <div className={styles.subDiv}>
+            <div className={styles.subDiv01}>
+                <SelfCard />
+            </div>
+            <div className={styles.subDiv02}>
                 <ThaisCard />
                 <RicardoCard />
             </div>
