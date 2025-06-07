@@ -12,7 +12,8 @@ A simple feed built to practice and show some front-end skills. The site shows y
 
 ## How to run
 
-Open your console, type "npm run dev" and it should open a browser tab showing the page.
+If you have NPM installed, type "npm run dev" on your console. Wait a bit and you'll get a message. Click with Ctrl+LMB on the "localhost" URL and it should open a new tab with the project.
+If you don't have NPM installed, type "npm install" on your console, wait for it to install and follow the instructions above.
 
 ## Contacts
 
